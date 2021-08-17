@@ -1,1 +1,70 @@
 /*test fichier assets/style.css*/
+a{text-decoration:none;}
+
+.navbar>.container-fluid{align-items: start;}
+.navbar-brand>img{
+    width:100px;
+}
+.navbar-brand>span{color:red;font-weight:bold;}
+a.nav-link.active:not(#pound){
+    transition: background .5s;
+    color:orange;
+}
+a.nav-link.active:hover {
+    background: red;
+    text-decoration:underline;
+}
+.navbar form{text-align:center;}
+.navbar form.d-flex{flex-flow:wrap;}
+
+
+main{display:flex;padding: 0 3rem;}
+main>section{display:flex;width:47.5%;flex-flow: wrap;justify-content: space-between;align-content: space-between;
+    background: whitesmoke;
+    box-shadow: 0 0 1px inset;
+    border-radius: 5px;
+    padding: .5rem;
+    margin: .5rem;}
+main>section>h2{width:100%;text-align: center;;}
+main>section>div{height:400px;width:100%;}
+main>section>div img{object-fit: cover;}
+main>section>div .carousel-inner,main>section>div .carousel-inner>.carousel-item,main>section>div .carousel-inner>.carousel-item img{height:100%;}
+main>section>.card{width:45%!important;
+    transition:box-shadow .4s;overflow:hidden;}
+main>section>.card:hover{
+    box-shadow: 0 0 10px;overflow-y: scroll;
+    border: 1px solid gold;
+}
+.card .card-body:last-of-type{display:none;}
+
+
+
+
+footer{display:flex;justify-content: space-around;border-top:solid black;box-shadow:0 0 1px;background:rgba(11,11,11,.5);color:white;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:900px) {
+    main{
+        flex-flow:wrap;
+    }
+    main>section{
+        width:100%;
+    }
+}
+@media screen and (min-width:901px) {
+    main>section>.card{
+        margin: 10px 10px;
+    }
+}
